@@ -31,7 +31,7 @@ public class SmartPhoneController : MonoBehaviour {
 	}
 
 	string loadHTML(string wsUrl) {
-		var html = (Resources.Load("html/ws") as TextAsset).text;
+		var html = (Resources.Load("SmartPhoneInputController/ws") as TextAsset).text;
 		return html.Replace("WEBSOCKET_BASE", wsUrl);
 	}
 
